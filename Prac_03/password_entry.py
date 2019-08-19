@@ -2,7 +2,7 @@ MIN_LENGTH = 5
 
 
 def main():
-    password = get_password(MIN_LENGTH)
+    password = get_password()
     display_asterisks(password)
 
 
