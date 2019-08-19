@@ -3,18 +3,15 @@ CP1404/CP5632 - Practical
 Pseudocode for temperature conversion
 """
 
-
-def main():
-    MENU = """C - Convert Celsius to Fahrenheit
+MENU = """C - Convert Celsius to Fahrenheit
     F - Convert Fahrenheit to Celsius
     Q - Quit"""
+
+
+def main():
     print(MENU)
     choice = input(">>> ").upper()
-    get_choice(choice, MENU)
     print("Thank you.")
-
-
-def get_choice(choice, MENU):
     while choice != "Q":
         if choice == "C":
             celsius = float(input("Celsius: "))
