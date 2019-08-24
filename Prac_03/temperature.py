@@ -17,7 +17,6 @@ def main():
             celsius = float(input("Celsius: "))
             fahrenheit = calculate_celsius(celsius)
             print("Result: {:.2f} F".format(fahrenheit))
-
         elif choice == "F":
             fahrenheit = float(input("Fahrenheit: "))
             celsius = calculate_fahrenheit(fahrenheit)

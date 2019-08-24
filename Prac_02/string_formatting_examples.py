@@ -29,8 +29,5 @@ for i, number in enumerate(numbers):
     print("Number {0} is {1:>5}".format(i + 1, number))
 
 number = 0
-for i in range(3):
-    print(number)
-    number += 50
-
-
+for i in range(0, 101, 50):
+    print("{:5}".format(i))
