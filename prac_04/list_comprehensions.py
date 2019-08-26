@@ -42,5 +42,5 @@ for i in range(0, len(numbers)):
         greater_than_five.append(numbers[i])
 
 
-#greater_than_five = [number for number in numbers if numbers[number] > 9]
-#print(greater_than_five)
+greater_than_five = [number for number in numbers if numbers[number] > 9]
+print(greater_than_five)
