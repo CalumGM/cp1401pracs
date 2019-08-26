@@ -11,6 +11,7 @@ def main():
     print("The largest number is {}".format(max(numbers)))
     average = (sum(numbers)/(len(numbers)))
     print("The average is {}".format(average))
+    security_checker()
 
 
 def security_checker():
@@ -22,4 +23,4 @@ def security_checker():
 
 
 main()
-security_checker()
+
