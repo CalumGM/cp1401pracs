@@ -14,6 +14,7 @@ def main():
                 number = random.randint(MIN, MAX)  # keeps choosing a number if that number is already in the list
             quick_picks.append(number)
         quick_picks.sort()
+        print("".join("{:3}".format(number) for number in quick_picks))
 
 
 main()
