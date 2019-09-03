@@ -34,5 +34,6 @@ almost_numbers = ['0', '10', '21', '3', '-7', '88', '9']
 numbers = [int(number) for number in almost_numbers]
 print(numbers)
 
-greater_than_five = [number for number in numbers if number > 9]
-print(greater_than_five)
+
+greater_than_nine = [number for number in numbers if number > 9]
+print(greater_than_nine)
