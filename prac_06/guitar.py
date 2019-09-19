@@ -11,11 +11,9 @@ class Guitar:
     def __str__(self):
         return "{} ({}) : ${:,.2f}".format(self.name, self.year, self.cost)
 
-    def __get_age__(self):
+    def get_age(self):
         return CURRENT_YEAR - self.year
 
-    def __is_vintage__(self):
-        if self.__get_age__() >= VINTAGE_YEAR:
-            return True
-        else:
-            return False
+    def is_vintage(self):
+        return self.get_age() >= VINTAGE_YEAR
+

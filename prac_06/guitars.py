@@ -16,4 +16,4 @@ print("These are my guitars")
 guitar_list = [str(guitar) for guitar in guitars]
 print(guitar_list)
 for i, guitar in enumerate(guitars):
-    print("Guitar {}: {} ({}), worth ${:,.2f}, vintage: {}".format(i + 1, guitar.name, guitar.year, guitar.cost, guitar.__is_vintage__()))
+    print("Guitar {}: {} ({}), worth ${:,.2f}, vintage: {}".format(i + 1, guitar.name, guitar.year, guitar.cost, guitar.is_vintage()))
