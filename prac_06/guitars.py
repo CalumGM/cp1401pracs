@@ -9,7 +9,7 @@ while name != "":
     cost = float(input("Cost: "))
     new_guitar = Guitar(name, year, cost)
     guitars.append(new_guitar)
-    print("{} ({}) : ${:,.2f} added".format(new_guitar.name, new_guitar.year, new_guitar.cost))
+    print("{} ({}) : ${:,.2f } added".format(new_guitar.name, new_guitar.year, new_guitar.cost))
     name = input("Name: ")
 
 print("These are my guitars")
