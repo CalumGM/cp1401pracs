@@ -1,0 +1,23 @@
+BoxLayout:
+    orientation: 'vertical'
+    BoxLayout:
+        orientation: 'horizontal'
+        TextInput:
+            text: '0'
+            id: input_text
+            on_text: app.handle_convert(int(input_text.text))
+        BoxLayout:
+            orientation: 'vertical'
+            Button:
+                text: 'up'
+                on_press: app.handle_button_up(input_text.text)
+            Button:
+                text: 'down'
+                on_press: app.handle_button_down(input_text.text)
+
+    Label:
+        id: output_label
+
+
+
+
