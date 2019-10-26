@@ -10,10 +10,10 @@ BoxLayout:
             orientation: 'vertical'
             Button:
                 text: 'up'
-                on_press: app.handle_button_up(input_text.text)
+                on_press: app.handle_button(input_text.text, 1)
             Button:
                 text: 'down'
-                on_press: app.handle_button_down(input_text.text)
+                on_press: app.handle_button(input_text.text, -1)
     Label:
         id: output_label
 
