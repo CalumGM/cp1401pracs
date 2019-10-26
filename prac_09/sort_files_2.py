@@ -14,8 +14,9 @@ for file in files:
 doctypes = list(dict.fromkeys(doctypes))
 
 for doctype in doctypes:
+    category = input("What category would you like to store {} files into: ".format(doctype))
     try:
-        os.mkdir(doctype)
+        os.mkdir(category)
     except FileExistsError:
         pass
     for file in files:
@@ -23,4 +24,4 @@ for doctype in doctypes:
             if file[index] == ".":
                 doc_type = file[index + 1:]
         if doctype == doc_type:
-            shutil.move(file, doctype + '/' + file)
+            shutil.move(file, category + '/' + file)
